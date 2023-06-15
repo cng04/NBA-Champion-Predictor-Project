@@ -8,11 +8,11 @@ I first web-scraped the per-game and advanced stats using WebDriver from Python'
 
 ## **Cleaning and Parsing the Data**
 
-Next, I used Python's BeautifulSoup library and its classes and methods to parse and extract the necessary tables and delete any unnecessary information. <br>
+Next, I used Python's BeautifulSoup library and its classes and methods to parse and extract the necessary tables and delete any unnecessary information for the per-game stats, advanced stats and playoff table. <br>
 
 Then, I used Python's Pandas library to clean the data (i.e. make sure I included only the relevant columns of data in my Dataframes, set any null values to 0, make sure each Team's name was the same historically, etc.). The most difficult part of this process was determining how to manage the playoff result data/where each team finished.<br>
 
-I used a scoring system to quantify each team's playoff performance: <br> 
+I used a scoring system (playoff score) to quantify each team's playoff performance: <br> 
 
 NBA Champion got **10** points<br>
 Runner-Up got **7** points<br>
@@ -20,6 +20,8 @@ Conference Finals losers got **4** points<br>
 Conference Semi-finals losers got **2** points<br>
 First Round losers got **1** point<br>
 Teams that didn't make the playoffs got **0** points.
+
+I then merged all the DataFrames of each into one Dataframe and then exported it in the CSV file titled **_merged_stats_scores_**
 
 ## **Training the Model**
 
@@ -36,8 +38,15 @@ I employed a backtesting function to use all the previous seasons (at least 2 pr
 ## **Cross Validation**
 
 To determine the best alpha value (which is the factor that determines how much regularization or penalty should be introduced) I used a 10-fold cross-validation function which split the data up 10 into 10 folds where each fold would be used once as the testing dataset.
-This was run for each alpha value in the range of 10<sup>-9</sup> to 10<sup>9</sup>, increasing by a factor of 10.
+This was run for each alpha value in the range of 10<sup>-9</sup> to 10<sup>9</sup>, increasing by a multiplicity factor of 10.
 
+## **Making the Predictions**
+
+The final predictions are then saved in the CSV files called **_results_ridge_** and which contains all the predictions from 1998 to 2022. I included actual/predicted rankings to better indicate which team was the most likely to win the NBA Champion. 
+
+The teams with the predicted ranking of 1 meant most likely, 2 is second most likely and so on. 
+
+Since it was around the start of the NBA Finals, I also trained the model on the seasons from 1996 to 2022 on each team's 2023 per game and advanced stats data and it found that the two most likely teams to win the 2023 NBA Championship was the **_Boston Celtics_** and the **_Denver Nuggets_**, the latter of which actually won, so yay!
 
 ## **Files Where Step of the Project can be Found**
 Code for web scraping and cleaning/parsing the per-game stats can be found in the **_scrape_clean_per_game_stats.ipynb_** file.<br>
@@ -45,3 +54,4 @@ Code for web scraping the advanced stats is in the _**web_scrape_advanced_stats.
 Code for cleaning and parsing the advanced stats data is in the **_clean_adv_stats.ipynb_**.<br>
 Code for web scraping the playoff scores is in the **_web_scrape_playoff.ipynb_**<br>
 Code for cleaning and parsing the playoff scores is in the **_clean_playoff_data.ipynb_**
+Code for merging the per game stats, advanced stats and playoff scores **_merging.ipynb_**
