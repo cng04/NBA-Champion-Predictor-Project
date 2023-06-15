@@ -36,7 +36,7 @@ I employed a backtesting function to use all the previous seasons (at least 2 pr
 ## **Cross Validation**
 
 To determine the best alpha value (which is the factor that determines how much regularization or penalty should be introduced) I used a 10-fold cross-validation function which split the data up 10 into 10 folds where each fold would be used once as the testing dataset.
-This was run for each alpha value in the range of 10<sup-9<sup to 10<sup9>sup, increasing by a factor of 10.
+This was run for each alpha value in the range of 10<sup>-9</sup> to 10<sup>9</sup>, increasing by a factor of 10.
 
 
 ## **Files Where Step of the Project can be Found**
