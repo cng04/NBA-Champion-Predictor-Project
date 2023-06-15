@@ -23,6 +23,12 @@ Teams that didn't make the playoffs got **0** points.
 
 ## **Training the Model**
 
+Finally, I used a Ridge Regression Model from Python's Scikit-Learn library to train the data on. Reasons being:
+
+1) It has an alpha value that tries to prevent overfitting of the data by adding a penalty function to the calculation of the Residual Sum of Squares. This way the model is more realistic and doesn't only work on the training data.
+
+2) It also decreases 
+
 
 ## **Where the Code can be Found**
 Code for web scraping and cleaning/parsing the per-game stats can be found in the **_scrape_clean_per_game_stats.ipynb_** file.<br>
