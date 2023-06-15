@@ -4,7 +4,7 @@ In this project, I used each (active) team's per-game stats (PTS, REB, AST, TOV)
 
 ## **Web Scraping**
 
-I first web-scraped the per-game and advanced stats using WebDriver from Python's Selenium Library and those files are in the DATA and ADVANCED folders respectively. <br><br> To quantify how well each team ended up performing in the playoffs (whether they won the Championship / Lost in the Finals / Missed the Playoffs Entirely) which is the dependent variable that the model will be trained on, I web-scraped a playoff bracket.
+I first web-scraped the per-game and advanced stats using WebDriver from Python's Selenium Library and those files are in the DATA and ADVANCED folders respectively. <br><br> To quantify how well each team ended up performing in the playoffs (whether they won the Championship / Lost in the Finals / Missed the Playoffs Entirely) which is the dependent variable that the model will be trained on, I web-scraped a playoff bracket and this data can be found in the _**PLAYOFFS**_ folder.
 
 ## **Cleaning and Parsing the Data**
 
@@ -48,7 +48,7 @@ The teams with the predicted ranking of 1 meant most likely, 2 is second most li
 
 Since it was around the start of the NBA Finals, I also trained the model on the seasons from 1996 to 2022 on each team's 2023 per game and advanced stats data and it found that the two most likely teams to win the 2023 NBA Championship was the **_Boston Celtics_** and the **_Denver Nuggets_**, the latter of which actually won, so yay!
 
-## **Files Where Step of the Project can be Found**
+## **Files Where Each Step of the Project can be Found**
 Code for web scraping and cleaning/parsing the per-game stats can be found in the **_scrape_clean_per_game_stats.ipynb_** file.<br>
 Code for web scraping the advanced stats is in the _**web_scrape_advanced_stats.ipynb**_ file.<br>
 Code for cleaning and parsing the advanced stats data is in the **_clean_adv_stats.ipynb_**.<br>
