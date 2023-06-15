@@ -23,11 +23,11 @@ Teams that didn't make the playoffs got **0** points.
 
 ## **Training the Model**
 
-Finally, I used a Ridge Regression Model from Python's Scikit-Learn library to train the data on. Reasons being:
+Finally, I used a Ridge Regression Model from Python's Scikit-Learn library to train the data on. Reason being:
 
-1) It has an alpha value that tries to prevent overfitting of the data by adding a penalty function to the calculation of the Residual Sum of Squares. This way the model is more realistic and doesn't only work on the training data.
+It has an alpha value that tries to prevent overfitting of the data by adding a penalty function to the calculation of the Residual Sum of Squares (which is what we want to minimize since the lower the difference between the model's predictions and the actual data, the better). This way the model is more realistic and doesn't only work on the training data. 
 
-2) It also decreases 
+This also reduces issues from highly correlated independent variables (multicollinearity).
 
 
 ## **Where the Code can be Found**
