@@ -13,6 +13,7 @@ Next, I used Python's BeautifulSoup library and its classes and methods to parse
 Then, I used Python's Pandas library to clean the data (i.e. make sure I included only the relevant columns of data in my Dataframes, set any null values to 0, make sure each Team's name was the same historically, etc.). The most difficult part of this process was determining how to manage the playoff result data/where each team finished.<br>
 
 I used a scoring system to quantify each team's playoff performance: <br> 
+
 NBA Champion got **10** points<br>
 Runner-Up got **7** points<br>
 Conference Finals losers got **4** points<br>
