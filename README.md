@@ -40,6 +40,8 @@ I employed a backtesting function to use all the previous seasons (at least 2 pr
 To determine the best alpha value (which is the factor that determines how much regularization or penalty should be introduced) I used a 10-fold cross-validation function which split the data up 10 into 10 folds where each fold would be used once as the testing dataset.
 This was run for each alpha value in the range of 10<sup>-9</sup> to 10<sup>9</sup>, increasing by a multiplicity factor of 10.
 
+The alpha value that corresponded with the lowest mean squared error (the lower, the better) was chosen. Mean squared error is the average squared difference between the predicted values and the actual value.
+
 ## **Making the Predictions**
 
 The final predictions are then saved in the CSV files called **_results_ridge_** and which contains all the predictions from 1998 to 2022. I included actual/predicted rankings to better indicate which team was the most likely to win the NBA Champion. 
