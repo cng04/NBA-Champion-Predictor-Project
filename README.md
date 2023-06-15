@@ -55,3 +55,6 @@ Code for cleaning and parsing the advanced stats data is in the **_clean_adv_sta
 Code for web scraping the playoff scores is in the **_web_scrape_playoff.ipynb_**<br>
 Code for cleaning and parsing the playoff scores is in the **_clean_playoff_data.ipynb_**
 Code for merging the per game stats, advanced stats and playoff scores **_merging.ipynb_**
+Code for the ridge regression model, backtesting and cross validation are found in _**ridge_regression.ipynb**_.
+
+# Thanks for Reading!
