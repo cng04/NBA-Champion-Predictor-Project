@@ -29,8 +29,17 @@ It has an alpha value that tries to prevent overfitting of the data by adding a 
 
 This also reduces issues from highly correlated independent variables (multicollinearity).
 
+## **BackTesting**
 
-## **Where the Code can be Found**
+I employed a backtesting function to use all the previous seasons (at least 2 previous seasons) as the training dataset for the next season. This way, I tested on all years 1998-2022 and obtained the predicted results. 
+
+## **Cross Validation**
+
+To determine the best alpha value (which is the factor that determines how much regularization or penalty should be introduced) I used a 10-fold cross-validation function which split the data up 10 into 10 folds where each fold would be used once as the testing dataset.
+This was run for each alpha value in the range of (10^(-9) to 10^(9)).
+
+
+## **Files Where Step of the Project can be Found**
 Code for web scraping and cleaning/parsing the per-game stats can be found in the **_scrape_clean_per_game_stats.ipynb_** file.<br>
 Code for web scraping the advanced stats is in the _**web_scrape_advanced_stats.ipynb**_ file.<br>
 Code for cleaning and parsing the advanced stats data is in the **_clean_adv_stats.ipynb_**.<br>
