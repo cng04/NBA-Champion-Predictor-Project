@@ -8,7 +8,7 @@ I first web-scraped the per-game and advanced stats using WebDriver from Python'
 
 ## **Where the Code can be Found**
 Code for web scraping and cleaning/parsing the per-game stats can be found in the **_scrape_clean_per_game_stats.ipynb_** file.<br>
-Code for web scraping the advanced stats is in the **_web_scrape_advanced_stats.ipynb** _file.<br>
+Code for web scraping the advanced stats is in the _**web_scrape_advanced_stats.ipynb**_ file.<br>
 Code for cleaning and parsing the advanced stats data is in the **_clean_adv_stats.ipynb_**.<br>
 Code for web scraping the playoff scores is in the **_web_scrape_playoff.ipynb_**<br>
 Code for cleaning and parsing the playoff scores is in the **_clean_playoff_data.ipynb_**
