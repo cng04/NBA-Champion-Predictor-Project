@@ -4,7 +4,7 @@ In this project, I used each (active) team's per-game stats (PTS, REB, AST, TOV)
 
 ## **Web Scraping**
 
-I first web-scraped the per-game and advanced stats using WebDriver from Python's Selenium Library and those files are in the DATA and ADVANCED folders respectively. <br><br> To quantify how well each team ended up performing in the playoffs (whether they won the Championship / Lost in the Finals / Missed the Playoffs Entirely) which is the dependent variable that the model will be trained on, I web-scraped a playoff bracket and this data can be found in the _**PLAYOFFS**_ folder.
+I first web-scraped the per-game and advanced stats using WebDriver from Python's Selenium Library and those files are in the _**PER_GAME_STATS**_ and _**ADVANCED_STATS**_ folders respectively. <br><br> To quantify how well each team ended up performing in the playoffs (whether they won the Championship / Lost in the Finals / Missed the Playoffs Entirely) which is the dependent variable that the model will be trained on, I web-scraped a playoff bracket and this data can be found in the _**PLAYOFFS_DATA**_ folder.
 
 ## **Cleaning and Parsing the Data**
 
