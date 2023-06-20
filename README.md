@@ -10,7 +10,7 @@ I first web-scraped the per-game and advanced stats using WebDriver from Python'
 
 Next, I used Python's BeautifulSoup library and its classes and methods to parse and extract the necessary tables and delete any unnecessary information for the per-game stats, advanced stats and playoff table. <br>
 
-Then, I used Python's Pandas library to clean the data (i.e. make sure I included only the relevant columns of data in my Dataframes, set any null values to 0, make sure each Team's name was the same historically, etc.). The most difficult part of this process was determining how to manage the playoff result data/where each team finished.<br>
+Then, I used Python's Pandas library to clean the data (i.e. make sure I included only the relevant columns of data in my Dataframes, set any null values to 0, make sure each Team's name was the same historically, etc.). The most difficult part of this process was determining how to manage the playoff results data (i.e. where each team finished).<br>
 
 I used a scoring system (playoff score) to quantify each team's playoff performance: <br> 
 
