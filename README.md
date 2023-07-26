@@ -9,6 +9,8 @@ In the above files, the higher the Predicted_Score, the more likely the team is 
 
 In short, NBA Champion received 10 points, Runner-Up received 7 points, teams that lost in the Conference Finals received 4 points, teams that lost in the Conference Finals received 4 points, teams that lost in the Conference Semi-finals received 2 points, teams that lost in the First Round received 1 point and teams that didn't make the playoffs at all received no points.
 
+The two most likely teams to win the 2023 NBA Championship were the Boston Celtics and the Denver Nuggets.
+
 ## **Web Scraping**
 
 I first web-scraped the per-game and advanced stats using WebDriver from Python's Selenium Library and those files are in the _**PER_GAME_STATS**_ and _**ADVANCED_STATS**_ folders respectively. <br><br> To quantify how well each team ended up performing in the playoffs (whether they won the Championship / Lost in the Finals / Missed the Playoffs Entirely) which is the dependent variable that the model will be trained on, I web-scraped a playoff bracket and this data can be found in the _**PLAYOFFS_DATA**_ folder.
