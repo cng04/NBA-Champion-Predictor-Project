@@ -3,13 +3,13 @@
 In this project, I used each (active) team's per-game stats (PTS, REB, AST, TOV) as well as their advanced stats in each season from 1996 to 2022 to predict who would be the NBA Champion that season. 
 
 ## **Summary**
-The full predictions of the most likely NBA champion per season is in the PREDICTIONS folder. See predictions_2023_NBA_champion.csv for predictions of the 2023 NBA Season and see predictions_1996_2022_NBA_champion_ridge.csv for the predictions fro the 1996 - 2022 NBA Seasons.
+The full predictions of the most likely NBA champion per season are in the PREDICTIONS folder. See **_predictions_2023_NBA_champion.csv_** for predictions on the 2023 NBA Season and see **_predictions_1996_2022_NBA_champion_ridge.csv_** for the predictions on the 1996 - 2022 NBA Seasons.
 
-In the above files, the higher the Predicted_Score, the more likely the team is to win the NBA champion. See **Cleaning and Parsing the Data** below for how each team's playoff score was determined for that season. 
+In the above files, the higher the Predicted_Score, the more likely the team is to win the NBA championship. See **Cleaning and Parsing the Data** below for how each team's playoff score was determined for that season. 
 
-In short, NBA Champion received 10 points, Runner-Up received 7 points, teams that lost in the Conference Finals received 4 points, teams that lost in the Conference Finals received 4 points, teams that lost in the Conference Semi-finals received 2 points, teams that lost in the First Round received 1 point and teams that didn't make the playoffs at all received no points.
+In short, NBA Champion received **10** points, Runner-Up received **7** points, teams that lost in the Conference Finals received **4** points, teams that lost in the Conference Semi-finals received **2** points, teams that lost in the First Round received **1** point and teams that didn't make the playoffs at all received **0** points.
 
-The two most likely teams to win the 2023 NBA Championship were the Boston Celtics and the Denver Nuggets.
+The two most likely teams to win the 2023 NBA Championship were the **Boston Celtics** and the **Denver Nuggets**.
 
 ## **Web Scraping**
 
