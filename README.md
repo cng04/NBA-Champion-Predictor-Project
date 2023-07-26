@@ -3,7 +3,7 @@
 In this project, I used each (active) team's per-game stats (PTS, REB, AST, TOV) as well as their advanced stats in each season from 1996 to 2022 to predict who would be the NBA Champion that season. 
 
 ## **Summary**
-The full predictions of the most likely NBA champion per season are in the PREDICTIONS folder. See <font size="1">**predictions_2023_NBA_champion.csv**</font> for predictions on the 2023 NBA Season and see **_predictions_1996_2022_NBA_champion_ridge.csv_** for the predictions on the 1996 - 2022 NBA Seasons.
+The full predictions of the most likely NBA champion per season are in the PREDICTIONS folder. See <font size="1">_**predictions_2023_NBA_champion.csv**_</font> for predictions on the 2023 NBA Season and see **_predictions_1996_2022_NBA_champion_ridge.csv_** for the predictions on the 1996 - 2022 NBA Seasons.
 
 In the above files, the higher the Predicted_Score, the more likely the team is to win the NBA championship. See **Cleaning and Parsing the Data** below for how each team's playoff score was determined for that season. 
 
