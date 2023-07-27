@@ -69,7 +69,6 @@ Code for web scraping the playoff scores is in the **_web_scrape_playoff.ipynb_*
 Code for cleaning and parsing the playoff scores is in the **_clean_playoff_data.ipynb_**<br>
 Code for merging the per game stats, advanced stats and playoff scores **_merging.ipynb_**<br>
 Code for the ridge regression model, backtesting and cross validation are found in _**ridge_regression.ipynb**_.
-
 Code for the 2023 per game stats and advanced stats are found in the folder called _**2023_Predictions**_
 
 # Thanks for Reading!
