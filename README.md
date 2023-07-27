@@ -57,7 +57,9 @@ The final predictions are then saved in the CSV files called **_results_ridge_**
 
 I included actual/predicted rankings to better indicate which team was the most likely to win the NBA Champion. The predicted rankings reflect how high the Predicted_Score is in that season relative to all the other teams that season.
 
-The teams with the predicted ranking of 1 meant most likely to win the NBA Championship, 2 is second most likely and so on. 
+The team that actually won the NBA Championship had an Actual_Rank of 1, the team that lost in the NBA Finals had an Actual_Rank of 2 and so on.
+
+The team with the Predicted_Rank of 1 was determined to be the most likely team to win the NBA Championship, the team with a Predicted_Rank of 2 is the second most likely team and so on. 
 
 Since it was around the start of the NBA Finals, I also trained the model on the seasons from 1996 to 2022 on each team's 2023 per game and advanced stats data and it found that the two most likely teams to win the 2023 NBA Championship was the **_Boston Celtics_** and the **_Denver Nuggets_**, the latter of which actually won, so yay!
 
