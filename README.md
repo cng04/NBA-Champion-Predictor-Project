@@ -5,7 +5,7 @@ In this project, I used each (active) team's per-game stats (PTS, REB, AST, TOV)
 ## **Summary**
 The full predictions of the most likely NBA champion per season are in the **PREDICTIONS** folder. See _**predictions_2023_NBA_champion.csv**_ for predictions on the 2023 NBA Season and see **_predictions_1996_2022_NBA_champion_ridge.csv_** for the predictions on the 1996 - 2022 NBA Seasons. The Predicted Rank reflects the team's likelihood to win the NBA Championship (lower rank is better).
 
-In the above files, the higher the Predicted_Score, the more likely the team is to win the NBA championship. See **Cleaning and Parsing the Data** below for how each team's playoff score was determined for that season. 
+In the above files, the higher the Predicted_Score (which is the Predicted Playoff Score), the more likely the team is to win the NBA championship. See **Cleaning and Parsing the Data** below for how each team's playoff score was determined for that season. 
 
 In short, NBA Champion received **10** points, Runner-Up received **7** points, teams that lost in the Conference Finals received **4** points, teams that lost in the Conference Semi-finals received **2** points, teams that lost in the First Round received **1** point and teams that didn't make the playoffs at all received **0** points.
 
